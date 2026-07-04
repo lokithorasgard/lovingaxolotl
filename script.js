@@ -1,0 +1,1 @@
+console.log("Loving Axolotl está funcionando 🫧");
