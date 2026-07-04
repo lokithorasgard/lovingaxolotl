@@ -437,7 +437,7 @@ main {
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(80, 150, 160, 0.25);
   display: none;
-  z-index: 20;
+  z-index: 999;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
@@ -458,7 +458,7 @@ footer {
 }
 
 /* Bubble page transition */
-body > *:not(.bubble-transition) {
+body > *:not(.bubble-transition):not(.back-to-top) {
   position: relative;
   z-index: 1;
 }
@@ -584,8 +584,8 @@ body > *:not(.bubble-transition) {
   }
 
   .logo img {
-  height: 36px;
-}
+    height: 36px;
+  }
 
   .menu-toggle {
     display: block;
