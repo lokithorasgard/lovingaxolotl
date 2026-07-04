@@ -1,2 +1,7 @@
-# lovingaxolotl
-A cute and responsible axolotl care website. Una web bonita y responsable sobre el cuidado de ajolotes.
+# Loving Axolotl 🫧
+
+Una bitácora digital y guía bonita para aprender sobre ajolotes.
+
+## Estado
+
+Proyecto en construcción.
