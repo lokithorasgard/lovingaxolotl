@@ -1,3 +1,41 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 40px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #dff7fa;
+}
+
+.logo {
+  font-weight: bold;
+  color: #ff7eb6;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #24424a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #ff7eb6;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -90,4 +128,24 @@ footer {
   padding: 30px 20px;
   background: #ffffff88;
   font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
 }
