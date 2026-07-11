@@ -8,11 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <div class="swimming-axolotl" aria-hidden="true">
+    <img src="assets/images/axolotl-swim.png" alt="" />
+  </div>
+
   <nav class="navbar">
     <a href="index.html" class="logo">
       <img src="assets/images/logo-loving-axolotl.png" alt="Loving Axolotl" />
@@ -31,23 +35,78 @@
     </div>
   </nav>
 
-  <header>
-    <div class="badge">🫧 Proyecto en construcción</div>
+  <header class="home-hero">
+    <div class="swimming-axolotl" aria-hidden="true">
+      <img src="assets/images/axolotl-swim.png" alt="" />
+    </div>
 
-    <h1>Loving Axolotl</h1>
+    <div class="badge">🫧 Guía bonita para cuidar ajolotes</div>
+
+    <img
+      src="assets/images/logo-loving-axolotl.png"
+      alt="Loving Axolotl"
+      class="hero-logo"
+    />
+
+    <h1>Aprende, organiza y cuida mejor a tu ajolote</h1>
 
     <p class="subtitle">
-      Una bitácora digital y guía bonita para aprender sobre ajolotes:
-      su origen, anatomía, cuidados, preparación del acuario y registro de evolución.
+      Esta página es una guía pensada para quienes quieren aprender sobre ajolotes,
+      preparar un acuario seguro y organizar sus cuidados de forma sencilla.
     </p>
 
     <div class="buttons">
       <a href="acuario.html">Preparar acuario</a>
-      <a href="bitacora.html" class="secondary">Ver bitácora</a>
+      <a href="conoce.html" class="secondary">Explorar guía</a>
     </div>
   </header>
 
   <main>
+    <section class="intro-section">
+      <div class="section-header">
+        <span class="section-kicker">🌸 Loving Axolotl</span>
+        <h2>Cuidado responsable, explicado de forma sencilla</h2>
+        <p>
+          Aquí encontrarás información sobre el ajolote, preparación del acuario,
+          cuidados básicos y recursos para llevar un seguimiento ordenado.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>🫧 Aprende</h3>
+          <p>
+            Descubre qué es un ajolote, de dónde viene, cómo es su anatomía
+            y por qué necesita cuidados específicos.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>🧪 Prepara</h3>
+          <p>
+            Organiza el acuario, el ciclado, los parámetros del agua,
+            la temperatura y los elementos básicos antes de su llegada.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>📔 Registra</h3>
+          <p>
+            Lleva un seguimiento visual de alimentación, mantenimiento,
+            parámetros, gastos, fotos y observaciones importantes.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>📎 Consulta</h3>
+          <p>
+            Accede a recursos, glosario, checklists y guías rápidas para
+            resolver dudas durante el cuidado del ajolote.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <h2 class="section-title">Empieza aquí</h2>
 
     <div class="cards">
@@ -101,11 +160,36 @@
         </section>
       </a>
     </div>
+
+    <section class="content-section">
+      <div class="section-header">
+        <span class="section-kicker">📍 Ruta recomendada</span>
+        <h2>¿Por dónde empezar?</h2>
+        <p>
+          Si estás empezando desde cero, sigue este orden para entender mejor
+          las necesidades de un ajolote antes de preparar su hogar.
+        </p>
+      </div>
+
+      <div class="evolution-box">
+        <div class="evolution-step">1. Conoce al ajolote</div>
+        <div class="evolution-arrow">↓</div>
+        <div class="evolution-step">2. Prepara el acuario</div>
+        <div class="evolution-arrow">↓</div>
+        <div class="evolution-step">3. Aprende sus cuidados</div>
+        <div class="evolution-arrow">↓</div>
+        <div class="evolution-step">4. Organiza su bitácora</div>
+      </div>
+    </section>
   </main>
 
   <footer>
     Hecho con cariño para aprender sobre ajolotes 🩷
   </footer>
+
+  <button class="back-to-top" aria-label="Volver arriba">
+    ↑
+  </button>
 
   <script src="script.js"></script>
 </body>
